@@ -5,7 +5,8 @@
         @email_addresses = email_addresses
 
         @@parser = []
-        
+    def self.parser
+      
   def parse
     @email_addresses.map { |e| e.split ("," " ") }
     @@parser << @email_addresses
