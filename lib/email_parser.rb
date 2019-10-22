@@ -11,6 +11,7 @@ require "pry"
     end
 
   def parse
+    binding.pry
     @email_addresses.map { |e| e.split ("," " ") }
     @@parser << @email_addresses
     @@parser.uniq!
