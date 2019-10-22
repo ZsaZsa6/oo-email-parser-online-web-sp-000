@@ -3,8 +3,7 @@
    @@all = []
   attr_accessor :email_addresses
     def initialize(email_addresses)
-      @@parser = parser
-      @emails = email_addresses
+        @email_addresses = email_addresses
 
   def self.parse
     @email_addresses.map! { |e| e.split ("," " ") }
