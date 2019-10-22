@@ -1,10 +1,11 @@
   class EmailAddressParser
 
-   @@parser = []
   attr_accessor :email_addresses
     def initialize(email_addresses)
         @email_addresses = email_addresses
 
+        @@parser = []
+        
   def parse
     @email_addresses.map { |e| e.split ("," " ") }
     @@parser << @email_addresses
