@@ -1,3 +1,4 @@
+require "pry"
   class EmailAddressParser
 
   attr_accessor :email_addresses
@@ -8,7 +9,7 @@
     def self.parser
       @@parser
     end
-    
+
   def parse
     @email_addresses.map { |e| e.split ("," " ") }
     @@parser << @email_addresses
