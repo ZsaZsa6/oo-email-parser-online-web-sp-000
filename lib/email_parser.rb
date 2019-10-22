@@ -12,8 +12,7 @@ require "pry"
 
   def parse
     binding.pry
-    @email_addresses.each { |e| e.split ("," " ") }
-    @@parser << @email_addresses
+    @@parser << @email_addresses.split ("," " ")
     @@parser.uniq!
     end
   end
