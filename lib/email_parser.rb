@@ -1,4 +1,4 @@
-  class EmailParser
+  class EmailAddressParser
 
    @@all = []
   attr_accessor :email_addresses
