@@ -1,14 +1,14 @@
   class EmailAddressParser
 
-   @@all = []
+   @@parser = []
   attr_accessor :email_addresses
     def initialize(email_addresses)
         @email_addresses = email_addresses
 
   def parse
     @email_addresses.map { |e| e.split ("," " ") }
-    @@all << @email_addresses
-    @@all.uniq!
+    @@parser << @email_addresses
+    @@parser.uniq!
     end
   end
 end
