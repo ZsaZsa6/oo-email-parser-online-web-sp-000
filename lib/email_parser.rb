@@ -6,7 +6,7 @@
         @email_addresses = email_addresses
 
   def self.parse
-    @email_addresses.map! { |e| e.split ("," " ") }
+    @email_addresses.map { |e| e.split ("," " ") }
     @@all << @email_addresses
     @@all.uniq!
     end
