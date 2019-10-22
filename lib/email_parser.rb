@@ -12,10 +12,9 @@ require "pry"
 
   def parse
     # binding.pry
-    @@parser << @email_addresses.split("," " ")
-    @@parser.uniq!
+    @@parser << @email_addresses.split("," " ").uniq
     end
-    @@parser
+  return @@parser
   end
 end
   # Build a class EmailParser that accepts a string of unformatted
