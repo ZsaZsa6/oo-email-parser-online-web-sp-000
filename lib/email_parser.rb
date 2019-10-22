@@ -12,7 +12,7 @@ require "pry"
 
   def parse
     # binding.pry
-    @@parser = @email_addresses().uniq
+    @@parser = @email_addresses(/).uniq
     end
   return @@parser
   end
