@@ -12,7 +12,7 @@ require "pry"
 
   def parse
     # binding.pry
-    @@parser = @email_addresses.split("," " " "").uniq
+    @@parser = @email_addresses.split(/\s*,\s*/).uniq
     end
   return @@parser
   end
